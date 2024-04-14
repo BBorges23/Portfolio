@@ -1,0 +1,54 @@
+body {
+    font-family: "Press Start 2P", system-ui;
+    overflow: hidden;
+}
+
+#home-page {
+    width: 100vw;
+    height: 100vh;
+    padding: 23vh 25vw 23vh 25vw;
+    background-color: #003554;
+    clip-path:polygon(
+            25% 23%, 0 0,       /* canto superior esquerdo */
+            15% 0%, 85% 0%,     /* topo */
+            100% 0,             /* canto superior direito */
+            75% 23%,            /* parte superior do 'X' */
+            75% 77%,            /* parte superior do 'X' */
+            100% 100%,          /* canto inferior direito */
+            81% 100%,           /* parte inferior do 'X' */
+            15% 100%,           /* base */
+            0 100%,             /* canto inferior esquerdo */
+            25% 77%             /* parte inferior do 'X' */
+    );
+}
+#row {
+    background-color: #0582CA;
+}
+.centro-info {
+    background-color: #00A6FB;
+    height: 100%;
+
+}
+#short-description {
+    font-size: .8rem;
+    font-weight: 300;
+    color: white;
+    a {
+       color: #003554;
+        text-decoration: none;
+    }
+}
+#title {
+    position: fixed;
+    top: 8%;
+    left: 30vw;
+    h1 {
+        color: white;
+        transform: perspective(300px) rotateX(-40deg)
+    }
+}
+#photo {
+    img {
+        border: solid 5px #003552;
+    }
+}
