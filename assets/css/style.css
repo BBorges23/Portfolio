@@ -1,8 +1,18 @@
+:root {
+    --color-top-bottom: #0582CA;
+    --color-left-right: #0582CA;
+    --color-centro: #00A6FB;
+    --color-tag-a: #003554;
+    --color-destaque : #003552;
+}
+.color-a{
+    color : var(--color-destaque);
+}
+/*Geral */
 body {
     font-family: "Press Start 2P", system-ui;
     overflow: hidden;
 }
-
 #home-page {
     width: 100vw;
     height: 100vh;
@@ -22,10 +32,12 @@ body {
     );
 }
 #row {
-    background-color: #0582CA;
+    background-color: var(--color-left-right);
 }
+
+/*sessao do centro */
 .centro-info {
-    background-color: #00A6FB;
+    background-color: var(--color-centro);
     height: 100%;
 
 }
@@ -34,10 +46,17 @@ body {
     font-weight: 300;
     color: white;
     a {
-       color: #003554;
+       color: var(--color-tag-a);
         text-decoration: none;
     }
 }
+#photo {
+    img {
+        border: solid 5px var(--color-destaque);
+    }
+}
+
+/*sessoes das paredes */
 #title {
     position: fixed;
     top: 8%;
@@ -47,8 +66,23 @@ body {
         transform: perspective(300px) rotateX(-40deg)
     }
 }
-#photo {
-    img {
-        border: solid 5px #003552;
+#languages {
+    position: fixed;
+    left: 4vw;
+    top: 10vw;
+    color: white;
+    transform: perspective(300px) rotateY(25deg);
+    h2 {
+        color: var(--color-destaque);
+    }
+}
+#projects {
+    position: fixed;
+    right: 8vw;
+    top: 23vh;
+    color: white;
+    transform: perspective(300px) rotate3d(1, 1, 5, -5deg);
+    h2 {
+        color: var(--color-destaque);
     }
 }
